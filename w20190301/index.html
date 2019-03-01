@@ -7,12 +7,22 @@
     <title>Mike&Ike</title>
 
     <!--Begin AngularJs-->
+    <script src="js/vendor/angular.min.js"></script>
     <!--End AngularJs-->
 
     <!--Begin DataTables-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/zf/dt-1.10.18/datatables.min.css"/>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/zf/dt-1.10.18/datatables.min.js"></script>
     <!--End DataTables-->
 
-    <!--Begin FontAwseome-->
+    <!--Begin FontAwesome-->
+    <!--Current Version-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- The font Awesome code below is several revisions back.
+   https://stackoverflow.com/questions/14698589/fontawesome-not-available-as-a-font-family
+    I discovered that it would work from an article on stack overflow.  all code should at some point be updated to relfect the last calling syntax for font awesome -->
+
+   <link href='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'>=
     <!--End FontAwesome-->
 
 
@@ -40,12 +50,19 @@
 
 
   <!--Begin Content-->
-  <!--Begin AngularJs-->
 
+  <!--Begin AngularJs-->
+  <div>
+        <label>Name:</label>
+        <input type="text" ng-model="yourName" placeholder="Enter a name here">
+        <hr>
+        <h1>Hello {{yourName}}!</h1>
+      </div>
   <!--End AngularJs-->
 
     <!--Begin DataTables-->
-    <!--End DatatTables-->
+    <!--End DataTables-->
+
   <!--End Content-->
 
   <!--Begin Footer-->
