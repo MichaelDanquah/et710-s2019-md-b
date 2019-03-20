@@ -20,15 +20,15 @@ var app = angular.module('customersApp',['ngRoute']);
              controller: 'ContactController',
              templateUrl: 'app/views/contact.html'
            })
-        .when('/story',
+        .when('/about',
            {
-             controller: 'StoryController',
-             templateUrl: 'app/views/story.html'
+             controller: 'AboutController',
+             templateUrl: 'app/views/about.html'
            })
-       .when('/adam',
+       .when('/services',
           {
-            controller: 'AdamController',
-            templateUrl: 'app/views/adam.html'
+            controller: 'ServicesController',
+            templateUrl: 'app/views/services.html'
           })
      });
      app.controller('WorksController', function($scope){
@@ -43,7 +43,7 @@ var app = angular.module('customersApp',['ngRoute']);
      app.controller('ContactController', function($scope){
        $scope.customerID = 5;
      });
-     app.controller('AdamController', function($scope){
+     app.controller('ServicesController', function($scope){
        $scope.customerID = 5;
      });
      app.controller('HomeController', function($scope) {
