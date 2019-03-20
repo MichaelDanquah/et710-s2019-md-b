@@ -32,8 +32,6 @@
       <script type="text/javascript" src="https://cdn.datatables.net/v/zf/dt-1.10.18/datatables.min.js"></script>
     <!--End DataTables-->
 
-    <!--Begin Font Awesome-->
-    <!--End FontAwesome-->
 
     <link rel="stylesheet" href="css/social.css">
 
@@ -50,39 +48,83 @@
     <!--End subnav-->
 
     <!-- *Begin Nav -->
-    <div data-sticky-container>
-    <div class="sticky" data-sticky data-margin-top="0">
-    <nav class="top-bar topbar-responsive">
-    <div class="top-bar-title">
-      <span data-responsive-toggle="topbar-responsive" data-hide-for="medium">
-        <button class="menu-icon" type="button" data-toggle></button>
-      </span>
-      <a class="topbar-responsive-logo" href="#"><strong>ET-710 Speed Drill</strong></a>
-    </div>
-    <div id="topbar-responsive" class="topbar-responsive-links">
-      <div class="top-bar-right">
-        <ul class="menu simple vertical medium-horizontal">
-          <li><a href="#">Home</a></li>
-          <li><a href="index.html#!/about">About</a></li>
-          <li><a href="index.html#!/services">Services</a></li>
-          <li><a href="index.html#!/works">Works</a></li>
-          <li><a href="index/html#!/news">News</a></li>
-          <li><a href="index/html#!/contact">Contact</a></li>
-          <li>
-            <button type="button" class="button hollow topbar-responsive-button">Categories</button>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+    <div class="top-bar foundation-5-top-bar">
+  <div class="top-bar-title">
+    <span data-responsive-toggle="responsive-menu" data-hide-for="medium">
+      <button class="menu-icon" type="button" data-toggle></button>
+    </span>
+    <strong>Site Title</strong>
   </div>
+  <div id="responsive-menu">
+    <div class="top-bar-left">
+      <ul class="dropdown vertical medium-horizontal menu" data-responsive-menu="drilldown medium-dropdown" data-auto-height="true" data-animate-height="true">
+        <li>
+          <a href="#">One</a>
+          <ul class="menu">
+            <li><a href="#">One</a></li>
+            <li><a href="#">Two</a></li>
+            <li>
+              <a href="#">Three</a>
+              <ul class="menu">
+                <li><a href="#">One</a></li>
+                <li><a href="#">Two</a></li>
+                <li>
+                  <a href="#">Three</a>
+                  <ul class="menu">
+                    <li><a href="#">One</a></li>
+                    <li><a href="#">Two</a></li>
+                    <li><a href="#">Three</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#">Two</a></li>
+        <li><a href="#">Three</a></li>
+      </ul>
+    </div>
+    <div class="top-bar-right">
+      <ul class="menu">
+        <li><input type="search" placeholder="Search"></li>
+        <li><button type="button" class="button">Search</button></li>
+      </ul>
+    </div>
   </div>
+</div>
+
+
+  <!-- /medium and larger nav bar -->
+
+
     <!-- *End Nav -->
 
 
     <!--Begin Header-->
 
     <!--Begin Social-->
+    <!-- Use these stylesheets for icons and typography in head of your HTML doc if you want :) -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+<!-- Start of body below -->
+
+<div class="social-links">
+  <div class="row">
+    <div class="small-6 medium-3 columns text-center mobile-stack">
+      <a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a>
+    </div>
+    <div class="small-6 medium-3 columns text-center mobile-stack">
+      <a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a>
+    </div>
+    <div class="small-6 medium-3 columns text-center mobile-stack">
+      <a href="https://www.pinterest.com/"><i class="fa fa-pinterest-p" aria-hidden="true"></i>Pinterest</a>
+    </div>
+    <div class="small-6 medium-3 columns text-center mobile-stack">
+      <a href="https://twitter.com/?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</a>
+    </div>
+  </div>
+</div>
+
+
     <!--End Social-->
 
     <!--End Header-->
@@ -98,9 +140,9 @@
      <h1>Hello {{yourName}}!</h1>
    </div>
     <!--End Angular Js-->
-
     <!--End Content-->
 
+      <!--Begin Footer-->
     <footer class="marketing-site-footer">
               <div class="grid-x grid-padding-x">
                   <div class="medium-4 cell">
